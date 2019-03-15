@@ -23,6 +23,9 @@
         width: 50%;
         display: flex;
         flex-flow: column nowrap;
+        margin-right: 100px;
+        padding-top: 120px;
+        margin-left: 61px;
         
     }
     .btn {
@@ -47,6 +50,8 @@
     }
     p{
         font-family: 'Lato', sans-serif; 
+        margin-right: 200px;
+        font-size: 1.5em;
 
         /*margin: 100px;*/
     }
