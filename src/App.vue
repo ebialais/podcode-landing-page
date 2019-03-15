@@ -1,22 +1,19 @@
 <template>
   <div id="app">
     <NavBar />
-    <SectionAccueil />
-    <Illustration />
+    <Main />
   </div>
 </template>
 
 <script>
   import NavBar from './components/Nav.vue'
-  import SectionAccueil from './components/SectionAccueil.vue'
-  import Illustration from './components/Illustration.vue'
+  import Main from './components/Main.vue'
 
   export default {
     name: 'app',
     components: {
       NavBar,
-      SectionAccueil,
-      Illustration,
+      Main,
     }
   }
 </script>
@@ -26,8 +23,6 @@
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
