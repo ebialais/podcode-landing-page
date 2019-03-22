@@ -2,7 +2,8 @@
     <div id="TextAccueil" class="jumbotron-fluid">
         <h1>{{ titre }}</h1>
         <p>{{ message }}</p>
-        <button class="btn btn-primary btn">Les épisodes...</button>
+        <!-- <router-link to="/Emissions" class="btn btn-primary btn">Les épisodes...</router-link>
+        <router-view /> -->
     </div>
 </template>
 
