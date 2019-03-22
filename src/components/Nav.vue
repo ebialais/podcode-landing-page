@@ -6,24 +6,27 @@
                 <li v-for="(icon, index) in icones" :key="index">
                     <a :href="icon.lien"><i :class="icon.class"></i></a>
                 </li>
-                <li class="menu-icon">
+                <li>
+                    <a @click="goHome"><i  class="fas fa-home"></i></a>
+                </li>
+                <!-- <li class="menu-icon">
                     
-                    <!-- <div @click="showMenu" v-if="!showTopMenu">
+                    <div @click="showMenu" v-if="!showTopMenu">
                         <span class="line line01"></span>
                         <span class="line line02"></span>
                         <span class="line line03"></span>
                     </div>
                     <div v-else class="openMenu-icon">
                         ✕
-                    </div> -->
-                </li>
+                    </div>
+                </li> -->
             </ul>
         <!-- </quick-menu> -->
-        <ul class="nav navbar-nav navbar-right nav-pills">
+        <!-- <ul class="nav navbar-nav navbar-right nav-pills">
             <li v-for="(icon, index) in icones" :key="index">
                 <a :href="icon.lien"><i :class="icon.class"></i></a>
             </li>
-        </ul>
+        </ul> -->
     </div>
 </template>
 
@@ -88,6 +91,9 @@
         methods: {
             showMenu (){
                 this.showTopMenu = !this.showTopMenu
+            },
+            goHome(){
+                this.$router.push('/');
             }
         }
     }
@@ -98,12 +104,12 @@
     width: 9vw;
     margin-left: 2vw;
     margin-top: 7px;
-}
+    }
     .nav>li>a:hover, .nav>li>a:focus {
         text-decoration: none;
         background-color: transparent;
     }
-    .fab  {
+    .fab, .fas  {
     margin-left: -34px;
     color:#b0b9c4;
     font-size: 1.5em;
@@ -111,8 +117,8 @@
     margin-right: 30px;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-}
-    .fab:hover {
+    }
+    .fab:hover, .fas:hover {
         color: #759faa;
         transform: scale(1.6);
         font-size: 1.5em;

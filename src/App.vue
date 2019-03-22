@@ -2,8 +2,6 @@
   <div id="app">
     <NavBar />
     <Accueil />
-    <router-link to="/">Home</router-link>
-    <router-link to="/Emissions">Les épisodes...</router-link>
     <router-view />
   </div>
   <!-- class="btn btn-primary btn" -->

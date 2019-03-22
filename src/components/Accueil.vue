@@ -1,18 +1,18 @@
 <template>
     <div id="Main">
         <TextAccueil />
-        <Illustration />
+        <IllustrationAccueil />
     </div>
 </template>
 
 <script>
     import TextAccueil from './TextAccueil.vue'
-    import Illustration from './Illustration.vue'
+    import IllustrationAccueil from './IllustrationAccueil.vue'
     export default {
         name: 'SectionAccueil',
         components: {
             TextAccueil,
-            Illustration,
+            IllustrationAccueil,
         }
     }
 </script>

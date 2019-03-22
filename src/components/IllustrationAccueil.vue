@@ -1,5 +1,5 @@
 <template>
-    <div id="illustration">
+    <div id="illustrationAccueil">
         <img id="decor" src="assets/decor.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
         <img id="homme" src="assets/homme.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
         <img id="femme" src="assets/femme.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
@@ -12,7 +12,7 @@
 
 <script>
     export default {
-        name: 'Illustration',
+        name: 'IllustrationAccueil',
     }
 </script>
 
@@ -213,7 +213,7 @@
         }
     }
 
-    #illustration {
+    #illustrationAccueil {
         width: 50%;
         height: 500px;
         opacity: 1;

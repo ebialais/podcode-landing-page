@@ -2,8 +2,7 @@
     <div id="TextAccueil" class="jumbotron-fluid">
         <h1>{{ titre }}</h1>
         <p>{{ message }}</p>
-        <!-- <router-link to="/Emissions" class="btn btn-primary btn">Les épisodes...</router-link>
-        <router-view /> -->
+        <button @click="goEpisodes">Les Episodes</button>
     </div>
 </template>
 
@@ -14,6 +13,11 @@
             return {
                 titre: 'Bienvenue à Podcode',
                 message: 'SoundCloud is a music and podcast streaming platform that lets you listen to millions of songs from around the world, or upload your own. Start listening now!',
+            }
+        },
+        methods: {
+            goEpisodes(){
+                this.$router.push('/Emissions')
             }
         }
     }
