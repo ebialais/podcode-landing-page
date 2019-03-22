@@ -1,8 +1,8 @@
 <template>
     <div id="illu2">
         <img id="decor" src="assets/Home@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
-        <img id="homme" src="assets/sitting§2@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
-        <img id="femme" src="assets/standing-6" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="homme" src="assets/sitting-2@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="femme" src="assets/standing-6.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
         <img id="mic" src="assets/new_mic.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
         <div>
             <p  id="pablo">@pablostanley</p>
