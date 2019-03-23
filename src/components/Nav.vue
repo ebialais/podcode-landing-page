@@ -55,11 +55,14 @@
 </script>
 
 <style scoped>
-    #podcode {
-    width: 9vw;
-    margin-left: 2vw;
-    margin-top: 7px;
+    #nav {
+        width: 98.5vw;
     }
+    #podcode {
+        width: 9vw;
+        margin-left: 2vw;
+        margin-top: 7px;
+        }
     .nav>li>a:hover, .nav>li>a:focus {
         text-decoration: none;
         background-color: transparent;
@@ -77,33 +80,7 @@
         color: #759faa;
         transform: scale(1.6);
         font-size: 1.5em;
-        margin-right: 30px;
-    }
-    .menu-icon {
-        width:40px;
-        height:30px;
-        margin-top: 40px;
-        margin-right: 30px;
-    }
-    .line {
-        position: absolute;
-        height: 5px;
-        width:100%;
-        background:black;
-        border-radius:10px;
-        transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
-    }
-
-    .line01 {
-        top:19%;
-    }
-
-    .line02 {
-        top:49%;
-    }
-
-    .line03 {
-        top:79%;
+        margin-right: 27px;
     }
 
     

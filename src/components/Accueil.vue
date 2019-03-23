@@ -26,7 +26,7 @@
 <style scoped>
     #Main {
         display: flex;
-        margin: 100px;
+        margin: 80px;
     }
     #TextAccueil {
         display: init;

@@ -24,8 +24,9 @@ export default {
 
 <style scoped>
     #menu{
-        width: 100vw;
-        height: 98vh;
+        width: 100%;
+        margin: auto;
+        height: 90vh;
         background-color: #96c3ca;
         font-family: 'Concert One', cursive;
         text-align: center;
