@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import Accueil from './components/Accueil.vue'
 import Emissions from './components/Emissions.vue'
+import Menu from './components/Menu.vue'
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/Emissions',
     name: 'Emissions',
     component: Emissions,
+  },
+  {
+    path: '/Menu',
+    name: 'Menu',
+    component: Menu,
   },
 ];
 

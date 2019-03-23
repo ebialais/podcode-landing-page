@@ -1,19 +1,25 @@
 <template>
     <div id="Main">
-        <TextAccueil />
-        <IllustrationAccueil />
+        <div class="text">
+            <TextAccueil id="TextAccueil" />
+            <boutonEpisodes id="boutonEpisodes" />
+        </div>
+        <IllustrationAccueil id="IllustrationAccueil" />
     </div>
 </template>
 
 <script>
     import TextAccueil from './TextAccueil.vue'
     import IllustrationAccueil from './IllustrationAccueil.vue'
+    import boutonEpisodes from './boutonEpisodes.vue'
+
     export default {
         name: 'SectionAccueil',
         components: {
             TextAccueil,
             IllustrationAccueil,
-        }
+            boutonEpisodes,
+        },
     }
 </script>
 
@@ -22,7 +28,14 @@
         display: flex;
         margin: 100px;
     }
-
-   
+    #TextAccueil {
+        display: init;
+    }
+    #boutonEpisodes {
+        display: init;
+    }
+    #IllustrationAccueil {
+        display: init;
+    }
 
 </style>

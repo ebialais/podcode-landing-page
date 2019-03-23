@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: 'ChoixEmissions',
+    name: 'ChoixEpisodes',
 }
 </script>
 

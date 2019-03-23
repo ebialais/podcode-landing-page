@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
-    <section id=accueil><Accueil /></section>
+    <section></section>
     <router-view />
   </div>
 </template>
@@ -17,7 +17,14 @@
       NavBar,
       Accueil,
     },
-
+    methods: {
+      beforeLoad(){
+        this.$router.push('/Accueil');
+      },
+    },
+    mounted(){
+      this.$nextTick(this.beforeLoad)
+    }
   }
 </script>
 

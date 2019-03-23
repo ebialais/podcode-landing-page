@@ -19,7 +19,7 @@
 
 <style>
     #emissions {
-    width: 77vw;
+    width: 47vw;
     height: 68vh;
     background-color: #89c5ccda;
     position: absolute;

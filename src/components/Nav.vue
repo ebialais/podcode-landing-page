@@ -1,77 +1,25 @@
 <template>
     <div id="nav">
-        <a :href="logo.lien"><img :src="logo.source" :id="logo.title"/></a>
-        <!-- <quick-menu :menu-count=count :icon-class=icons :menu-url-list=list> -->
-            <ul class="nav navbar-nav navbar-right nav-pills">
-                <li v-for="(icon, index) in icones" :key="index">
-                    <a :href="icon.lien"><i :class="icon.class"></i></a>
-                </li>
-                <li>
-                    <a @click="goHome"><i  class="fas fa-home"></i></a>
-                </li>
-                <!-- <li class="menu-icon">
-                    
-                    <div @click="showMenu" v-if="!showTopMenu">
-                        <span class="line line01"></span>
-                        <span class="line line02"></span>
-                        <span class="line line03"></span>
-                    </div>
-                    <div v-else class="openMenu-icon">
-                        ✕
-                    </div>
-                </li> -->
-            </ul>
-        <!-- </quick-menu> -->
-        <!-- <ul class="nav navbar-nav navbar-right nav-pills">
+        <a @click="goAccueil"><img :src="logo.source" :id="logo.title"/></a>
+        <ul class="nav navbar-nav navbar-right nav-pills">
             <li v-for="(icon, index) in icones" :key="index">
                 <a :href="icon.lien"><i :class="icon.class"></i></a>
             </li>
-        </ul> -->
+            <li>
+                <a @click="goAccueil"><i  class="fas fa-home"></i></a>
+            </li>
+            <li>
+                <a @click="goMenu"><i class="fas fa-bars"></i></a>
+            </li>
+        </ul>
     </div>
 </template>
 
 <script>
-    // import Vue from 'vue'
-    // import quickMenu from 'vue-quick-menu'
     export default {
         name: 'NavBar', 
-        // props: {
-        //     menuCount: {
-        //         required: true,
-        //         default: 4, 
-        //         type: Number,
-        //     },
-        //     menuUrlList: {
-        //         required: true,
-        //         type: Array,
-        //     },
-        //     iconClass: {
-        //         required: true,
-        //         type: Array,
-        //     },
-        //     position: {
-        //         required: false,
-        //         type: top,
-        //     },
-        //     backgroundColor: {
-        //         required: false,
-        //         default: "#009dc7", 
-        //         type: String,
-        //     },
-        //     color: {
-        //         required: false,
-        //         default: "#ffffff", 
-        //         type: String,
-        //     },
-        //     isOpenNewTab: {
-        //         required: false,
-        //         default: false, 
-        //         type: Boolean,
-        //     },
-        // },
         data (){
             return {
-                
                 logo: {
                     title: 'podcode',
                     source: './assets/logo_podcode_black.png',
@@ -92,8 +40,11 @@
             showMenu (){
                 this.showTopMenu = !this.showTopMenu
             },
-            goHome(){
-                this.$router.push('/');
+            goAccueil(){
+                this.$router.push('/Accueil');
+            },
+            goMenu(){
+                this.$router.push('/Menu');
             }
         }
     }
