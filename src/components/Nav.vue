@@ -5,11 +5,14 @@
             <li v-for="(icon, index) in icones" :key="index">
                 <a :href="icon.lien"><i :class="icon.class"></i></a>
             </li>
-            <li>
+            <!-- <li>
                 <a @click="goAccueil"><i  class="fas fa-home"></i></a>
-            </li>
+            </li> -->
             <li>
-                <a @click="goMenu"><i class="fas fa-bars"></i></a>
+                <a @click="goMenu">
+                    <i v-if="bar" class="fas fa-bars"></i>
+                    <i v-else class="fas fa-times"></i>
+                </a>
             </li>
         </ul>
     </div>
@@ -30,7 +33,7 @@
                     {title: 'facebook', lien:'#', class: 'fab fa-facebook-f'},
                     {title: 'twitter', lien:'#', class: 'fab fa-twitter'}, 
                 ],
-                showTopMenu: false,
+                bar: true,
             }
         },
         // components: {
@@ -45,6 +48,7 @@
             },
             goMenu(){
                 this.$router.push('/Menu');
+                this.bar = !this.bar;
             }
         }
     }

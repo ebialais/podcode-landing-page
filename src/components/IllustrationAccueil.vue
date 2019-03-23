@@ -136,16 +136,11 @@
         }
     }
 
-
-
-
-
     #femme {
         position: fixed;
         width: 13%;
         top:55%;
         left: 70%;
-
         animation: animationFemme ease-in-out 1s;
         animation-iteration-count: 1;
         transform-origin: 50% 50%;
@@ -167,7 +162,6 @@
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
         }
-
 
     @keyframes animationFemme{
         0% {

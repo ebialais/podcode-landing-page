@@ -37,5 +37,4 @@
     #IllustrationAccueil {
         display: init;
     }
-
 </style>

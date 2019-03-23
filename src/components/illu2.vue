@@ -42,7 +42,7 @@
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%;
     -ms-animation-fill-mode: forwards;
-}
+    }
 
 
     @keyframes animationFrames{
@@ -135,10 +135,6 @@
         }
     }
 
-
-
-
-
     #femme {
         position: fixed;
         width: 13%;
@@ -165,7 +161,6 @@
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
         }
-
 
     @keyframes animationFemme{
         0% {
@@ -224,7 +219,8 @@
     top: 23%;
     left: 52%;
     z-index: -9999;
-}
+    }
+
     #mic {
         position: fixed;
         width: 12%;
@@ -306,6 +302,7 @@
         -ms-transform:  translate(10px,0px)  ;
         }
     }
+
     #pablo {
     position: fixed;
     top: 66%;
@@ -317,5 +314,5 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
     z-index: 9999;
-}
+    }
 </style>

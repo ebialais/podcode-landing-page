@@ -32,7 +32,7 @@ export default {
     }
     li {
         list-style-type: none;
-        font-size : 7vw;
+        font-size : 6vw;
     }
 
 </style>
