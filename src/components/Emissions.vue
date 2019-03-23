@@ -18,7 +18,7 @@
 </script>
 
 <style>
-    #emissions {
+  #emissions {
     width: 47vw;
     height: 68vh;
     background-color: #89c5ccda;
@@ -30,12 +30,12 @@
     text-align: center;
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
     transition: box-shadow .3s;
+    z-index: -50;
+  }
 
-}
-
-#emissions:hover {
-  box-shadow: 0 0 11px rgba(3, 53, 148, 0.2); 
-}
+  #emissions:hover {
+    box-shadow: 0 0 11px rgba(3, 53, 148, 0.2); 
+  }
 
 
 

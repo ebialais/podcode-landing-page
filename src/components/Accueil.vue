@@ -27,6 +27,7 @@
     #Main {
         display: flex;
         margin: 80px;
+        z-index:-50;
     }
     #TextAccueil {
         display: init;

@@ -1,20 +1,29 @@
 <template>
     <div id="nav">
-        <a @click="goAccueil"><img :src="logo.source" :id="logo.title"/></a>
-        <ul class="nav navbar-nav navbar-right nav-pills">
-            <li v-for="(icon, index) in icones" :key="index">
-                <a :href="icon.lien"><i :class="icon.class"></i></a>
-            </li>
-            <!-- <li>
-                <a @click="goAccueil"><i  class="fas fa-home"></i></a>
-            </li> -->
-            <li>
-                <a @click="goMenu">
-                    <i v-if="bar" class="fas fa-bars"></i>
-                    <i v-else class="fas fa-times"></i>
-                </a>
-            </li>
-        </ul>
+        <div id="navBar">
+            <a @click="goAccueil1"><img :src="logo.source" :id="logo.title"/></a>
+            <ul class="nav navbar-nav navbar-right nav-pills">
+                <li v-for="(icon, index) in icones" :key="index">
+                    <a :href="icon.lien"><i :class="icon.class"></i></a>
+                </li>
+                <!-- <li>
+                    <a @click="goAccueil"><i  class="fas fa-home"></i></a>
+                </li> -->
+                <li>
+                    <a id="hamburger" @click="changeBar">
+                        <i v-if="bar" class="fas fa-bars" ></i>
+                        <i v-else class="fas fa-times"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div v-if="!bar" id="menu">
+                <ul>
+                    <li class="menuLi" @click="goAccueil">Home</li>
+                    <li class="menuLi" @click="goEpisodes">Episodes</li>
+                    <li class="menuLi">Blabla</li>
+                </ul>
+            </div>
     </div>
 </template>
 
@@ -36,18 +45,22 @@
                 bar: true,
             }
         },
-        // components: {
-        //     quickMenu
-        // },
         methods: {
-            showMenu (){
-                this.showTopMenu = !this.showTopMenu
+            // showMenu (){
+            //     this.showTopMenu = !this.showTopMenu
+            // },
+            goAccueil1(){
+                this.$router.push('/Accueil');
             },
             goAccueil(){
                 this.$router.push('/Accueil');
+                this.bar = !this.bar;
             },
-            goMenu(){
-                this.$router.push('/Menu');
+            goEpisodes(){
+                this.$router.push('/Emissions');
+                this.bar = !this.bar;
+            },
+            changeBar(){
                 this.bar = !this.bar;
             }
         }
@@ -82,7 +95,19 @@
         font-size: 1.5em;
         margin-right: 27px;
     }
-
+    #menu{
+        width: 100%;
+        margin: auto;
+        height: 90vh;
+        background-color: #96c3ca;
+        font-family: 'Concert One', cursive;
+        text-align: center;
+        z-index: 9999;
+    }
+    .menuLi{
+        list-style-type: none;
+        font-size : 6vw;
+    }
     
 
 </style>

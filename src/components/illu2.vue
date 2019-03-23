@@ -42,6 +42,7 @@
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%;
     -ms-animation-fill-mode: forwards;
+    z-index: 50;
     }
 
 
@@ -160,6 +161,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
+        z-index: 50;
         }
 
     @keyframes animationFemme{
@@ -246,6 +248,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
+        z-index: 50;
     }
 
     @keyframes animationMic{
@@ -313,6 +316,6 @@
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    z-index: 9999;
+    z-index: 50;
     }
 </style>
