@@ -44,6 +44,8 @@
         font-size: 39px;
         color: #96c3ca;
         font-family: 'Concert One', cursive;
+        margin-bottom:60px;
+        
 
 
     }

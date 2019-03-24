@@ -225,9 +225,9 @@
 
     #mic {
         position: fixed;
-        width: 12%;
-        top: 52%;
-        left: 67%;
+        width: 5%;
+        top: 55%;
+        left: 70%;
         animation: animationMic 5s;
         animation-iteration-count: 1;
         transform-origin: 50% 50%;
