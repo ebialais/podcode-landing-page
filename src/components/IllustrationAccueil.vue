@@ -18,31 +18,35 @@
 </script>
 
 <style scoped>
+    #illustrationAccueil{
+        z-index:-10;
+    }
     #homme  {
     position: fixed;
     width: 17%;
     top: 50%;
     left: 56%;
-    animation: animationFrames-data-v-7baed180 ease 2s;
+    animation: animationFrames ease 2s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
     animation-fill-mode: forwards;
-    -webkit-animation: animationFrames-data-v-7baed180 ease 2s;
+    -webkit-animation: animationFrames ease 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-transform-origin: 50% 50%;
     -webkit-animation-fill-mode: forwards;
-    -moz-animation: animationFrames-data-v-7baed180 ease 2s;
+    -moz-animation: animationFrames ease 2s;
     -moz-animation-iteration-count: 1;
     -moz-transform-origin: 50% 50%;
     -moz-animation-fill-mode: forwards;
-    -o-animation: animationFrames-data-v-7baed180 ease 2s;
+    -o-animation: animationFrames ease 2s;
     -o-animation-iteration-count: 1;
     -o-transform-origin: 50% 50%;
     -o-animation-fill-mode: forwards;
-    -ms-animation: animationFrames-data-v-7baed180 ease 2s;
+    -ms-animation: animationFrames ease 2s;
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%;
     -ms-animation-fill-mode: forwards;
+    z-index: -50;
 }
 
 
@@ -136,16 +140,11 @@
         }
     }
 
-
-
-
-
     #femme {
         position: fixed;
         width: 13%;
         top:55%;
         left: 70%;
-
         animation: animationFemme ease-in-out 1s;
         animation-iteration-count: 1;
         transform-origin: 50% 50%;
@@ -166,8 +165,8 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
+        z-index: -50;
         }
-
 
     @keyframes animationFemme{
         0% {
@@ -252,6 +251,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
+        z-index: -50;
     }
 
     @keyframes animationMic{
@@ -318,6 +318,6 @@
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    z-index: 9999;
+    z-index: -51;
 }
 </style>

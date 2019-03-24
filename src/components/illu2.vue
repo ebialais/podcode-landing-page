@@ -1,8 +1,8 @@
 <template>
     <div id="illu2">
         <img id="decor" src="assets/Home@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
-        <img id="homme" src="assets/sitting§2@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
-        <img id="femme" src="assets/standing-6" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="homme" src="assets/sitting-2@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="femme" src="assets/standing-6.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
         <img id="mic" src="assets/new_mic.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
         <div>
             <p  id="pablo">@pablostanley</p>
@@ -20,29 +20,30 @@
     #homme  {
     position: fixed;
     width: 17%;
-    top: 50%;
-    left: 56%;
-    animation: animationFrames-data-v-7baed180 ease 2s;
+    top:55%;
+    left: 74%;
+    animation: animationFramesease 2s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
     animation-fill-mode: forwards;
-    -webkit-animation: animationFrames-data-v-7baed180 ease 2s;
+    -webkit-animation: animationFrames ease 2s;
     -webkit-animation-iteration-count: 1;
     -webkit-transform-origin: 50% 50%;
     -webkit-animation-fill-mode: forwards;
-    -moz-animation: animationFrames-data-v-7baed180 ease 2s;
+    -moz-animation: animationFrames ease 2s;
     -moz-animation-iteration-count: 1;
     -moz-transform-origin: 50% 50%;
     -moz-animation-fill-mode: forwards;
-    -o-animation: animationFrames-data-v-7baed180 ease 2s;
+    -o-animation: animationFramesease 2s;
     -o-animation-iteration-count: 1;
     -o-transform-origin: 50% 50%;
     -o-animation-fill-mode: forwards;
-    -ms-animation: animationFrames-data-v-7baed180 ease 2s;
+    -ms-animation: animationFrames ease 2s;
     -ms-animation-iteration-count: 1;
     -ms-transform-origin: 50% 50%;
     -ms-animation-fill-mode: forwards;
-}
+    z-index: 50;
+    }
 
 
     @keyframes animationFrames{
@@ -135,16 +136,11 @@
         }
     }
 
-
-
-
-
     #femme {
         position: fixed;
         width: 13%;
-        top:55%;
-        left: 70%;
-
+        top: 50%;
+        left: 54%;
         animation: animationFemme ease-in-out 1s;
         animation-iteration-count: 1;
         transform-origin: 50% 50%;
@@ -165,8 +161,8 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
+        z-index: 50;
         }
-
 
     @keyframes animationFemme{
         0% {
@@ -225,7 +221,8 @@
     top: 23%;
     left: 52%;
     z-index: -9999;
-}
+    }
+
     #mic {
         position: fixed;
         width: 12%;
@@ -251,6 +248,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
+        z-index: 50;
     }
 
     @keyframes animationMic{
@@ -307,6 +305,7 @@
         -ms-transform:  translate(10px,0px)  ;
         }
     }
+
     #pablo {
     position: fixed;
     top: 66%;
@@ -317,6 +316,6 @@
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    z-index: 9999;
-}
+    z-index: 50;
+    }
 </style>

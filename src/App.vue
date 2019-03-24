@@ -1,10 +1,8 @@
 <template>
   <div id="app">
     <NavBar />
-    <Accueil />
     <router-view />
   </div>
-  <!-- class="btn btn-primary btn" -->
 </template>
 
 <script>
@@ -17,18 +15,23 @@
     components: {
       NavBar,
       Accueil,
+    },
+    methods: {
+      beforeLoad(){
+        this.$router.push('/Accueil');
+      },
+    },
+    mounted(){
+      this.$nextTick(this.beforeLoad)
     }
   }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-
-
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
 </style>
