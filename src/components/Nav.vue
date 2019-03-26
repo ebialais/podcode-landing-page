@@ -19,15 +19,18 @@
         </div>
         <div v-if="!bar" id="menu">
                 <ul>
-                    <li class="menuLi" @click="goAccueil">Home</li>
+                    <li class="menuLi" @click="goAccueil">Accueil</li>
                     <li class="menuLi" @click="goEpisodes">Episodes</li>
-                    <li class="menuLi">Blabla</li>
+                    <li class="menuLi">Blog</li>
+                    <li class="menuLi">Contact</li>
                 </ul>
             </div>
     </div>
 </template>
 
 <script>
+
+
     export default {
         name: 'NavBar', 
         data (){
@@ -62,12 +65,18 @@
             },
             changeBar(){
                 this.bar = !this.bar;
+               
             }
+            
+
         }
     }
+
+    
 </script>
 
 <style scoped>
+
     #nav {
         width: 98.5vw;
     }
@@ -79,6 +88,7 @@
     .nav>li>a:hover, .nav>li>a:focus {
         text-decoration: none;
         background-color: transparent;
+        
     }
     .fab, .fas  {
     margin-left: -34px;
@@ -95,19 +105,54 @@
         font-size: 1.5em;
         margin-right: 27px;
     }
+
+    
+
     #menu{
-        width: 100%;
+        width: 102%;
         margin: auto;
-        height: 90vh;
+        height: 92vh;
         background-color: #96c3ca;
         font-family: 'Concert One', cursive;
         text-align: center;
-        z-index: 9999;
+        
+        
+        
     }
+
+
+  
+
+
+
+
+   
+    .fa-bars:before {
+    content: "\f0c9";
+    animation: ;
+}
+
+
     .menuLi{
         list-style-type: none;
         font-size : 6vw;
+        cursor: pointer;
+        
+    }
+    .menuLi:hover{
+        list-style-type: none;
+        font-size : 6vw;
+        background-color: #506f77;
+        cursor: pointer;
+        color: white;
+        box-sizing: content-box;
+        width: 100%;
     }
     
+    ul {
+        /* margin-left: -40px; */
+        margin: 0;
+        padding: 0;
+    }
 
 </style>

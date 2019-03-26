@@ -16,7 +16,7 @@ export default {
 <style>
 button {
     text-align: center;
-    margin-left: 316px;
+    margin-left: 150px;
     margin-top: 62px;
     padding: 10px 10px 10px 10px;
     color: #fff;

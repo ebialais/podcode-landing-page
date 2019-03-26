@@ -27,7 +27,7 @@
     background-color: #89c5ccda;
     position: absolute;
     top: 20%;
-    left: 4%;
+    left: 5%;
     color:rgb(35, 35, 85);
     font-size: 2em;
     text-align: center;

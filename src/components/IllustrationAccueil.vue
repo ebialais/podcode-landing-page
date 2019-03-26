@@ -221,9 +221,9 @@
 
     #decor {
     position: fixed;
-    width: 40%;
-    top: 23%;
-    left: 52%;
+    width: 48%;
+    top: 14%;
+    left: 47%;
     z-index: -9999;
 }
     #mic {
