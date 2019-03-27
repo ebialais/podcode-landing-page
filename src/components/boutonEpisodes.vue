@@ -33,7 +33,7 @@ button {
 button:hover {
     background-color: #69a1ac;
     -webkit-box-shadow: 0px 1px 71px 33px rgb(105, 161, 172);
-    /* box-shadow: 0px 2px 59px 5px rgba(105, 161, 172, 0.64); */
+    box-shadow: 0px 1px 71px 33px rgb(105, 161, 172);
     color: #ffffff;
     transform: scale(1.05);
     /* border: solid white 1px; */
