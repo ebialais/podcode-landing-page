@@ -2,6 +2,7 @@
   <div id="app">
     <NavBar />
     <router-view />
+    <pied />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
   import {router} from './main.js'  
   import NavBar from './components/Nav.vue'
   import Accueil from './components/Accueil.vue'
+  import pied from './components/Footer.vue'
 
   export default {
     name: 'app',
     components: {
       NavBar,
       Accueil,
+      pied
     },
     methods: {
       beforeLoad(){
