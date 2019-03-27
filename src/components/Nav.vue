@@ -115,22 +115,9 @@
         background-color: #96c3ca;
         font-family: 'Concert One', cursive;
         text-align: center;
-        
-        
-        
+        position: fixed;
+         
     }
-
-
-  
-
-
-
-
-   
-    .fa-bars:before {
-    content: "\f0c9";
-    animation: ;
-}
 
 
     .menuLi{

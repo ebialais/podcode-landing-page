@@ -10,7 +10,7 @@
         name: 'TextAccueil',
         data () {
             return {
-                titre: 'Bienvenue à Podcode',
+                titre: 'Un podcast sur le développement web',
                 message: 'SoundCloud is a music and podcast streaming platform that lets you listen to millions of songs from around the world, or upload your own. Start listening now!',
             }
         },
