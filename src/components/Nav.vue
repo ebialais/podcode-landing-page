@@ -17,7 +17,8 @@
                 </li>
             </ul>
         </div>
-        <div v-if="!bar" id="menu">
+        <transition name="menuAnim">
+            <div v-if="!bar" id="menu">
                 <ul>
                     <li class="menuLi" @click="goAccueil">Accueil</li>
                     <li class="menuLi" @click="goEpisodes">Episodes</li>
@@ -25,6 +26,7 @@
                     <li class="menuLi">Contact</li>
                 </ul>
             </div>
+        </transition>
     </div>
 </template>
 
@@ -65,7 +67,6 @@
             },
             changeBar(){
                 this.bar = !this.bar;
-               
             }
             
 
@@ -84,7 +85,7 @@
         width: 9vw;
         margin-left: 2vw;
         margin-top: 7px;
-        }
+    }
     .nav>li>a:hover, .nav>li>a:focus {
         text-decoration: none;
         background-color: transparent;
@@ -105,9 +106,6 @@
         font-size: 1.5em;
         margin-right: 27px;
     }
-
-    
-
     #menu{
         width: 102%;
         margin: auto;
@@ -116,9 +114,14 @@
         font-family: 'Concert One', cursive;
         text-align: center;
         position: fixed;
-         
     }
-
+    .menuAnim-enter-active, .menuAnim-leave-active {
+        transition: opacity 1.5s;
+    }
+    .menuAnim-enter, .menuAnim-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
+        /* transform: translate-X(5000px); */
+    }
 
     .menuLi{
         list-style-type: none;
