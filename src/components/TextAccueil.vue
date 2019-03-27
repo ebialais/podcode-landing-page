@@ -12,7 +12,7 @@
         data () {
             return {
                 titre: 'Un podcast sur le développement web.',
-                message: "Le podcast qui parle a la generation d'auto-apprenants des technologies web. Nous sommes inspires par l'idée de dé-coder les sujets de soft-skills ou tech-skills. En bref, libérer la parole et le savoir pour accompagner le parcours de l'aspirant web-dev.",
+                message: "Le podcast qui parle à la génération d'auto-apprenants des technologies web. Nous sommes inspirés par l'idée de dé-coder les sujets de soft-skills ou tech-skills. En bref, libérer la parole et le savoir pour accompagner le parcours de l'aspirant web-dev.",
                 bannière: '#Innovation, #Entrepreunariat, #MarcheDuTravail, #AutoFormation, #Productivite, #Outils'
             }
         },

@@ -10,12 +10,13 @@
   "dependencies": {
     "vue": "^2.6.6",
     "vue-quick-menu": "^1.0.7",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
+    "cryptiles": "4.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
-    "@vue/cli-service": "^3.5.0",
+    "@vue/cli-service": "^3.5.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
