@@ -12,7 +12,7 @@
     import TextAccueil from './TextAccueil.vue'
     import IllustrationAccueil from './IllustrationAccueil.vue'
     import boutonEpisodes from './boutonEpisodes.vue'
-
+    
     export default {
         name: 'SectionAccueil',
         components: {
