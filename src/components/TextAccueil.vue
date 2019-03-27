@@ -12,22 +12,33 @@
         data () {
             return {
                 titre: 'Un podcast sur le développement web.',
-                message: "Le podcast qui parle à la génération d'auto-apprenants des technologies web. Nous sommes inspirés par l'idée de dé-coder les sujets de soft-skills ou tech-skills. En bref, libérer la parole et le savoir pour accompagner le parcours de l'aspirant web-dev.",
-                bannière: '#Innovation, #Entrepreunariat, #MarcheDuTravail, #AutoFormation, #Productivite, #Outils'
+                message: "Le podcast qui parle à la génération d'auto-apprenants des technologies web. Nous sommes inspirés par l'idée de dé-coder les sujets de soft-skills ou tech-skills. En bref, libérer la parole et le savoir pour accompagner le parcours de \"l'aspirant web-dev\".",
+                bannière: '#Innovation, #Entrepreunariat, #MarcheDuTravail, #AutoFormation, #Productivite, #Outils.'
             }
         },
     }
 </script>
 
 <style scoped>
+
+    #message {
+        margin-top: 0px;
+    font-size: 1em;
+    }
+
+    #bannière {
+        font-size: 1em;
+    }
+
     #TextAccueil {
         width: 50%;
         display: flex;
         flex-flow: column nowrap;
         margin-right: 100px;
-        padding-top: 120px;
+        padding-top: 80px;
         margin-left: 61px;
     }
+
     .btn {
         width: 150px;
         color: #ffffff;
@@ -35,28 +46,27 @@
         border-color: #96c3ca;
         transition: all .2s ease-in-out; 
     }
+
     .btn:hover {
         color: #ffffff;
         background-color: #759faa;
         border-color: #759faa;
     }
+
     h1 {
         width: 433px;
         font-size: 39px;
         color: #96c3ca;
         font-family: 'Concert One', cursive;
-        margin-bottom:60px;
-        
-
-
+        margin-bottom:35px;
     }
-    p{
+
+    p {
         font-family: 'Lato', sans-serif; 
         margin-right: 200px;
         font-size: 1.5em;
         /*margin: 100px;*/
     }
-
 
     button {
         position: relative;
@@ -82,8 +92,6 @@
         color: #191847;
     }
 
-
-
     button:after {
         content: "";
         background: #89c5cc;
@@ -103,7 +111,5 @@
         opacity: 1;
         transition: 0s
     }
-
-
 
 </style>

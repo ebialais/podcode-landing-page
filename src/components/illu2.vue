@@ -307,8 +307,8 @@
 
     #pablo {
     position: fixed;
-    top: 66%;
-    left: 90%;
+    top: 59%;
+    left: 89%;
     font-size: 9px;
     text-align: right;
     -webkit-writing-mode: vertical-rl;

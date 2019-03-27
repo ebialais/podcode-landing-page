@@ -4,7 +4,7 @@
             <a @click="goAccueil1"><img :src="logo.source" :id="logo.title"/></a>
             <ul class="nav navbar-nav navbar-right nav-pills">
                 <li v-for="(icon, index) in icones" :key="index">
-                    <a :href="icon.lien"><i :class="icon.class"></i></a>
+                    <a :href="icon.lien" target="_blank"><i :class="icon.class"></i></a>
                 </li>
                 <!-- <li>
                     <a @click="goAccueil"><i  class="fas fa-home"></i></a>
@@ -32,7 +32,6 @@
 
 <script>
 
-
     export default {
         name: 'NavBar', 
         data (){
@@ -43,7 +42,7 @@
                     lien: '#',
                 },
                 icones: [
-                    {title: 'soundCloud', lien:'#', class: 'fab fa-soundcloud'},
+                    {title: 'soundCloud', lien:'https://soundcloud.com/podcode-becode', class: 'fab fa-soundcloud'},
                     {title: 'facebook', lien:'#', class: 'fab fa-facebook-f'},
                     {title: 'twitter', lien:'#', class: 'fab fa-twitter'}, 
                 ],

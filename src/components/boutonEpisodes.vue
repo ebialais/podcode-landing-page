@@ -32,10 +32,10 @@ button {
 
 button:hover {
     background-color: #69a1ac;
-    -webkit-box-shadow: 0px 1px 71px 33px rgb(105, 161, 172);
-    box-shadow: 0px 1px 71px 33px rgb(105, 161, 172);
+    -webkit-box-shadow: 0px 1px 41px 13px rgb(105, 161, 172);
+    box-shadow: 0px 1px 41px 13px rgb(105, 161, 172);
     color: #ffffff;
-    transform: scale(1.05);
+    transform: scale(1);
     /* border: solid white 1px; */
 }
 
