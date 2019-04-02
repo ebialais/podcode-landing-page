@@ -13,7 +13,6 @@
 <script>
     export default {
         name: 'IllustrationAccueil',
-        name: 'illu2',
     }
 </script>
 
