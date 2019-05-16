@@ -37,5 +37,9 @@
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
   }
 </style>
