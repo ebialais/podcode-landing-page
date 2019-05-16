@@ -2,6 +2,7 @@
     <div id="TextAccueil" class="jumbotron-fluid">
         <h1 id="titreAccueil">{{ titre }}</h1>
         <p id="message">{{ message }}</p>
+        <br />
         <p id="bannière">{{ bannière }}</p>
     </div>
 </template>
@@ -21,7 +22,10 @@
 
 <style scoped>
     #TextAccueil {
-        width: 90%;
+        position: absolute;
+        width: 40%;
+        top:15%;
+        left:4%;
         display: flex;
         flex-flow: column nowrap;
         margin-right: 100px;
@@ -35,9 +39,7 @@
         font-size: 1em;
     }
 
-    #titrreAccueil {
-        width: 100%;
-    }
+   
 
     #bannière {
         width: 100%;
@@ -65,7 +67,7 @@
         font-size: 39px;
         color: #96c3ca;
         font-family: 'Concert One', cursive;
-        margin-bottom:35px;
+        margin-bottom:45px;
     }
 
     p {
@@ -75,22 +77,7 @@
         /*margin: 100px;*/
     }
 
-    button {
-        position: relative;
-        background-color: #69a1ac;
-        border: none;
-        padding: 4px;
-        width: 200px;
-        color: #fff;
-        font-size: 1.5em;
-        text-align: center;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.5s;
-        text-decoration: none;
-        overflow: hidden;
-        margin-left: 60px;
-        margin-top: 20px;
-    }
+
 
     button:hover{
         background: #c1dee2;
@@ -121,8 +108,37 @@
     
     @media only screen and (max-width: 800px){
         #TextAccueil {
-            margin: auto;
+        position: absolute;
+        width: 80%;
+        top: 48%;
+        left:4%;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-right: 0px;
+        padding-top: 0px;
+        margin-left: 20px;
         }
+
+        h1{
+          
+        width: 100%;
+        font-size: 25px;
+        color: #96c3ca;
+        font-family: 'Concert One', cursive;
+      
+}
+    p {
+        font-family: 'Lato', sans-serif; 
+        margin-right: 200px;
+        font-size: 1em;
+        /*margin: 100px;*/
+    }
+
+     #message {
+        width: 100%;
+        margin: 0px;
+        font-size: 0.9em;
+    }
         
     }
 
