@@ -18,10 +18,11 @@
 
 <style scoped>
     #illustrationAccueil{
+        width: 50vw;
         z-index:-10;
     }
     #homme  {
-    position: fixed;
+    /* position: fixed; */
     width: 17%;
     top: 50%;
     left: 56%;
@@ -140,7 +141,7 @@
     }
 
     #femme {
-        position: fixed;
+        /* position: fixed; */
         width: 13%;
         top:55%;
         left: 70%;
@@ -213,23 +214,24 @@
     }
 
     #illustrationAccueil {
-        width: 50%;
+        width: 500px;
         height: 500px;
         opacity: 1;
     }
 
     #decor {
-    position: fixed;
-    width: 48%;
-    top: 14%;
-    left: 47%;
-    z-index: -9999;
+    position: relative;
+    width: inherit;
+    height: auto;
+    /* top: 14%;
+    left: 47%;*/
+    z-index: -9999; 
 }
     #mic {
-        position: fixed;
-            width: 5%;
-    top: 55%;
-    left: 71%;
+        position: relative;
+        width: 5%;
+        top: 55%;
+        left: 71%;
         animation: animationMic 5s;
         animation-iteration-count: 1;
         transform-origin: 50% 50%;
@@ -308,7 +310,7 @@
         }
     }
     #pablo {
-    position: fixed;
+    /* position: fixed; */
     top: 66%;
     left: 89.5%;
     font-size: 9px;

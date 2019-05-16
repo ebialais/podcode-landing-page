@@ -1,13 +1,13 @@
 <template>
     <div id="Main">
-        <div class="text">
-            <TextAccueil id="TextAccueil" />
-            <boutonEpisodes id="boutonEpisodes" />
+        <div id="text">
+            <TextAccueil />
+            <boutonEpisodes />
         </div>
-        <IllustrationAccueil id="IllustrationAccueil" />
+        <IllustrationAccueil />
     </div>
 </template>
-// script
+
 <script>
     import TextAccueil from './TextAccueil.vue'
     import IllustrationAccueil from './IllustrationAccueil.vue'
@@ -26,16 +26,21 @@
 <style scoped>
     #Main {
         display: flex;
-        margin: 80px;
+        flex-direction: row;
+        /* margin: 8vw; */
         z-index:-50;
     }
-    #TextAccueil {
-        display: init;
+    #text {
+        width: 50vw;
     }
-    #boutonEpisodes {
-        display: init;
-    }
-    #IllustrationAccueil {
-        display: init;
+    
+    @media only screen and (max-width: 800px){
+        #Main {
+            flex-direction: column-reverse
+        }
+        #text {
+            width: 100vw;
+        }
+        
     }
 </style>

@@ -19,7 +19,7 @@
         align-items: center;
         position: fixed;
         left: 0px;
-        top:780px;
+        bottom: 0px;
         width: 100%;
         background-color: #f2f2f2;
         height: 40px;

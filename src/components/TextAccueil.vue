@@ -1,6 +1,6 @@
 <template>
     <div id="TextAccueil" class="jumbotron-fluid">
-        <h1>{{ titre }}</h1>
+        <h1 id="titreAccueil">{{ titre }}</h1>
         <p id="message">{{ message }}</p>
         <p id="bannière">{{ bannière }}</p>
     </div>
@@ -20,24 +20,31 @@
 </script>
 
 <style scoped>
-
-    #message {
-        margin-top: 0px;
-    font-size: 1em;
-    }
-
-    #bannière {
-        font-size: 1em;
-    }
-
     #TextAccueil {
-        width: 50%;
+        width: 90%;
         display: flex;
         flex-flow: column nowrap;
         margin-right: 100px;
         padding-top: 80px;
         margin-left: 61px;
     }
+
+    #message {
+        width: 100%;
+        margin: 0px;
+        font-size: 1em;
+    }
+
+    #titrreAccueil {
+        width: 100%;
+    }
+
+    #bannière {
+        width: 100%;
+        font-size: 1em;
+        margin: 0;
+    }
+
 
     .btn {
         width: 150px;
@@ -110,6 +117,13 @@
         margin: 0;
         opacity: 1;
         transition: 0s
+    }
+    
+    @media only screen and (max-width: 800px){
+        #TextAccueil {
+            margin: auto;
+        }
+        
     }
 
 </style>

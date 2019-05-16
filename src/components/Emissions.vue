@@ -1,7 +1,7 @@
 <template>
     <div id="emissions">
         <p>Derniers épisodes</p>
-        <illu2 />
+        <illu2 id="illuEmissions"/>
         <ChoixEpisodes />
     </div>
 </template>
@@ -43,5 +43,14 @@
     font-size: 0.5em;
     margin-top: 15px;
   }
-
+  @media only screen and (max-width: 800px){
+     #emissions{
+      width: 90%;
+      margin: auto
+     }
+    #illuEmissions{
+      display: none
+    }
+      
+  }
 </style>

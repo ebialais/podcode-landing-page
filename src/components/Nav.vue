@@ -43,7 +43,7 @@
                 },
                 icones: [
                     {title: 'soundCloud', lien:'https://soundcloud.com/podcode-becode', class: 'fab fa-soundcloud'},
-                    {title: 'facebook', lien:'#', class: 'fab fa-instagram'},
+                    // {title: 'instagram', lien:'#', class: 'fab fa-instagram'},
                     {title: 'twitter', lien:'https://twitter.com/podcode', class: 'fab fa-twitter'}, 
                 ],
                 bar: true,
