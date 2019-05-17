@@ -90,32 +90,32 @@
         }
     }
     #femme {
-    position: fixed;
-    width: 12%;
-    top: 56%;
-    left: 63%;
-    animation: animationFrames ease 2s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-    animation-fill-mode: forwards;
-    -webkit-animation: animationFrames ease 2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform-origin: 50% 50%;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation: animationFrames ease 2s;
-    -moz-animation-iteration-count: 1;
-    -moz-transform-origin: 50% 50%;
-    -moz-animation-fill-mode: forwards;
-    -o-animation: animationFrames ease 2s;
-    -o-animation-iteration-count: 1;
-    -o-transform-origin: 50% 50%;
-    -o-animation-fill-mode: forwards;
-    -ms-animation: animationFrames ease 2s;
-    -ms-animation-iteration-count: 1;
-    -ms-transform-origin: 50% 50%;
-    -ms-animation-fill-mode: forwards;
-    z-index: -50;
-}
+        position: fixed;
+        width: 12%;
+        top: 56%;
+        left: 63%;
+        animation: animationFrames ease 2s;
+        animation-iteration-count: 1;
+        transform-origin: 50% 50%;
+        animation-fill-mode: forwards;
+        -webkit-animation: animationFrames ease 2s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation: animationFrames ease 2s;
+        -moz-animation-iteration-count: 1;
+        -moz-transform-origin: 50% 50%;
+        -moz-animation-fill-mode: forwards;
+        -o-animation: animationFrames ease 2s;
+        -o-animation-iteration-count: 1;
+        -o-transform-origin: 50% 50%;
+        -o-animation-fill-mode: forwards;
+        -ms-animation: animationFrames ease 2s;
+        -ms-animation-iteration-count: 1;
+        -ms-transform-origin: 50% 50%;
+        -ms-animation-fill-mode: forwards;
+        z-index: -50;
+    }
 
 
     @keyframes animationFrames{
@@ -215,12 +215,12 @@
     }
 
     #decor {
-    position: fixed;
-    width: 33%;
-    top: 21%;
-    left: 59%;
-    z-index: -9999;
-}
+        position: fixed;
+        width: 33%;
+        top: 21%;
+        left: 59%;
+        z-index: -9999;
+    }
 
     #mic {
         position: fixed;
@@ -306,15 +306,15 @@
     }
 
     #pablo {
-    position: fixed;
-    top: 59%;
-    left: 89%;
-    font-size: 9px;
-    text-align: right;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    z-index: 50;
+        position: fixed;
+        top: 59%;
+        left: 89%;
+        font-size: 9px;
+        text-align: right;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        z-index: 50;
     }
 </style>
