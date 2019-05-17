@@ -1,15 +1,24 @@
 <template>
-    <div id="TextAccueil" class="jumbotron-fluid">
+    <div id="Accueil2" class="jumbotron-fluid">
+        <p>Accueil 2</p>
         <h1 id="titreAccueil">{{ titre }}</h1>
         <p id="message">{{ message }}</p>
         <br />
         <p id="bannière">{{ bannière }}</p>
+        <button @click="goEpisodes">Episodes</button>
+        <IllustrationAccueil />
     </div>
 </template>
 
 <script>
+
+    import IllustrationAccueil from './IllustrationAccueil.vue'
+
     export default {
         name: 'TextAccueil',
+        components: {
+            IllustrationAccueil,
+        },
         data () {
             return {
                 titre: 'Un podcast sur le développement web.',
@@ -17,6 +26,12 @@
                 bannière: '#Innovation, #Entrepreunariat, #MarcheDuTravail, #AutoFormation, #Productivite, #Outils.'
             }
         },
+        methods: {
+            goEpisodes(){
+                console.log("blabla")
+                this.$router.push('/Emissions');
+            }
+        }
     }
 </script>
 
@@ -46,8 +61,7 @@
         margin: 0;
     }
 
-
-    .btn {
+    /* .btn {
         width: 150px;
         color: #ffffff;
         background-color: #96c3ca;
@@ -59,24 +73,7 @@
         color: #ffffff;
         background-color: #759faa;
         border-color: #759faa;
-    }
-
-    h1 {
-        width: 433px;
-        font-size: 39px;
-        color: #96c3ca;
-        font-family: 'Concert One', cursive;
-        margin-bottom:45px;
-    }
-
-    p {
-        font-family: 'Lato', sans-serif; 
-        margin-right: 200px;
-        font-size: 1.5em;
-        /*margin: 100px;*/
-    }
-
-
+    } */
 
     button:hover{
         background: #c1dee2;
@@ -104,39 +101,42 @@
         opacity: 1;
         transition: 0s
     }
-    
-    @media only screen and (max-width: 800px){
-        #TextAccueil {
-        position: absolute;
-        width: 80%;
-        top: 48%;
-        left:4%;
-        display: flex;
-        flex-flow: column nowrap;
-        margin-right: 0px;
-        padding-top: 0px;
-        margin-left: 20px;
-       
-        }
 
-        h1{
-          
-        width: 100%;
-        font-size: 30px;
+    h1 {
+        width: 433px;
+        font-size: 39px;
         color: #96c3ca;
         font-family: 'Concert One', cursive;
-         margin-top: 60px;
-        margin-bottom: 0px;
-      
-}
+        margin-bottom:45px;
+    }
+
     p {
         font-family: 'Lato', sans-serif; 
         margin-right: 200px;
-        font-size: 1em;
+        font-size: 1.5em;
         /*margin: 100px;*/
     }
 
-     #message {
+    
+    @media only screen and (max-width: 800px){
+        #Accueil {
+            position: absolute;
+            width: 80%;
+            top: 48%;
+            left:4%;
+            margin-right: 0px;
+            padding-top: 0px;
+            margin-left: 20px;
+        }
+
+        h1{
+            width: 100%;
+            font-size: 30px;
+            margin-top: 60px;
+        }
+    
+
+    #message {
          
         width: 60%;
         margin: 0px;
@@ -154,50 +154,25 @@
 
 
     @media only screen and (max-width: 400px){
-    
-    #TextAccueil {
-        position: absolute;
-        width: 80%;
-        top: 48%;
-        left:4%;
-        display: flex;
-        flex-flow: column nowrap;
-        margin-right: 0px;
-        padding-top: 0px;
-        margin-left: 20px;
-       
-        }
 
         h1{
-        width: 100%;
-        font-size: 25px;
-        color: #96c3ca;
-        font-family: 'Concert One', cursive;
-         margin-top: 5px;
-        margin-bottom: 0px;
-      
-}
-    p {
-        font-family: 'Lato', sans-serif; 
-        margin-right: 200px;
-        font-size: 1em;
-        /*margin: 100px;*/
-    }
+            font-size: 25px;
+            margin-top: 5px;
+        }
+    
 
-    #message {
-        width: 100%;
-        margin: 0px;
-        font-size: 0.9em;
-        margin-top: 15px;
-    }
+        #message {
+            width: 100%;
+            margin: 0px;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
         
+        #bannière {
+            font-size: 0.8em;
+        }
     }
 
-    #bannière {
-        width: 100%;
-        font-size: 0.8em;
-        margin: 0;
-    }
 
 
 

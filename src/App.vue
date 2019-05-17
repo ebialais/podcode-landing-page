@@ -9,19 +9,19 @@
 <script>
   import {router} from './main.js'  
   import NavBar from './components/Nav.vue'
-  import Accueil from './components/Accueil.vue'
+  import Accueil2 from './components/Accueil2.vue'
   import pied from './components/Footer.vue'
 
   export default {
     name: 'app',
     components: {
       NavBar,
-      Accueil,
+      Accueil2,
       pied
     },
     methods: {
       beforeLoad(){
-        this.$router.push('/Accueil');
+        this.$router.push('/Accueil2');
       },
     },
     mounted(){

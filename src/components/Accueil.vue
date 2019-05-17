@@ -1,5 +1,9 @@
 <template>
     <div id="Main">
+        <div>
+            <button @click="test">Click</button>
+            <img src="/assets/information.png" id="imgInfoMoins" @click="getInfo" />
+        </div>
         <div id="text">
             <TextAccueil />
             <boutonEpisodes />
@@ -20,6 +24,15 @@
             IllustrationAccueil,
             boutonEpisodes,
         },
+        methods: {
+            test(){
+                console.log("click")
+            },
+            getInfo(){
+                console.log(this.displayInfo)
+                // this.displayInfo = !this.displayInfo;
+            }
+        }
     }
 </script>
 
