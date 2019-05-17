@@ -44,10 +44,10 @@
     margin-top: 15px;
   }
   @media only screen and (max-width: 800px){
-     #emissions{
+    #emissions{
       width: 90%;
       margin: auto
-     }
+    }
     #illuEmissions{
       display: none
     }

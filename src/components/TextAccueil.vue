@@ -39,7 +39,6 @@
         font-size: 1em;
     }
 
-   
 
     #bannière {
         width: 100%;
@@ -170,7 +169,6 @@
         }
 
         h1{
-          
         width: 100%;
         font-size: 25px;
         color: #96c3ca;
@@ -186,8 +184,7 @@
         /*margin: 100px;*/
     }
 
-     #message {
-         
+    #message {
         width: 100%;
         margin: 0px;
         font-size: 0.9em;

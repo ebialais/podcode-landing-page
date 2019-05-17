@@ -2,13 +2,10 @@
     <div id="nav">
         <div id="navBar">
             <a @click="goAccueil1"><img :src="logo.source" :id="logo.title"/></a>
-            <ul class="nav navbar-nav navbar-right nav-pills">
+            <ul id="ulNavBar">
                 <li v-for="(icon, index) in icones" :key="index">
                     <a :href="icon.lien" target="_blank"><i :class="icon.class"></i></a>
                 </li>
-                <!-- <li>
-                    <a @click="goAccueil"><i  class="fas fa-home"></i></a>
-                </li> -->
                 <li>
                     <a id="hamburger" @click="changeBar">
                         <i v-if="bar" class="fas fa-bars" ></i>
@@ -19,7 +16,7 @@
         </div>
         <transition name="menuAnim">
             <div v-if="!bar" id="menu">
-                <ul>
+                <ul id="ulHamburger">
                     <li class="menuLi" @click="goAccueil">Accueil</li>
                     <li class="menuLi" @click="goEpisodes">Episodes</li>
                     <li class="menuLi">Blog</li>
@@ -50,9 +47,6 @@
             }
         },
         methods: {
-            // showMenu (){
-            //     this.showTopMenu = !this.showTopMenu
-            // },
             goAccueil1(){
                 this.$router.push('/Accueil');
             },
@@ -67,8 +61,6 @@
             changeBar(){
                 this.bar = !this.bar;
             }
-            
-
         }
     }
 
@@ -78,26 +70,35 @@
 <style scoped>
 
     #nav {
-        width: 98.5vw;
+        width: 100%;
+    }
+    #navBar {
+        width: 100%;
     }
     #podcode {
         width: 9vw;
+        min-width: 90px;
         margin-left: 2vw;
         margin-top: 7px;
     }
-    .nav>li>a:hover, .nav>li>a:focus {
+    #nav>li>a:hover, #nav>li>a:focus {
         text-decoration: none;
         background-color: transparent;
         
     }
+    
+    #nav>li>a:hover, #nav>li>a:focus{
+        text-decoration: none;
+        background-color: transparent;
+    }
     .fab, .fas  {
-    margin-left: -34px;
-    color:#b0b9c4;
-    font-size: 1.5em;
-    margin-top: 13px;
-    margin-right: 30px;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+        margin-left: -34px;
+        color:#b0b9c4;
+        font-size: 1.5em;
+        margin-top: 13px;
+        margin-right: 30px;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
     }
     .fab:hover, .fas:hover {
         color: #759faa;
@@ -105,7 +106,7 @@
         font-size: 1.5em;
         margin-right: 27px;
     }
-    #menu{
+    #menu {
         width: 102%;
         margin: auto;
         height: 92vh;
@@ -117,16 +118,14 @@
     .menuAnim-enter-active, .menuAnim-leave-active {
         transition: opacity 1.5s;
     }
-    .menuAnim-enter, .menuAnim-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    .menuAnim-enter, .menuAnim-leave-to {
         opacity: 0;
-        /* transform: translate-X(5000px); */
     }
 
     .menuLi{
         list-style-type: none;
         font-size : 6vw;
         cursor: pointer;
-        
     }
     .menuLi:hover{
         list-style-type: none;
@@ -138,10 +137,28 @@
         width: 100%;
     }
     
-    ul {
-        /* margin-left: -40px; */
+    #ulNavBar {
         margin: 0;
         padding: 0;
+        width: 150px;
+        list-style-type: none;
+        float: right;
+        display: flex;
+        flex-direction: row;
+    }
+    #ulNavBar>li {
+        display: inline-block;
+        padding: 10px;
     }
 
+    @media only screen and (max-width: 800px){
+        #ulNavBar {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 30px;
+        }
+        #navBar {
+            width: 100%;
+        }   
+    }
 </style>
