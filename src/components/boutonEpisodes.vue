@@ -47,8 +47,31 @@ button:hover {
     button {
    position: absolute;
    width: 30%;
-   top: 100%;
-   left: 21%;
+   top: 80%;
+   left: 31%;
+    margin-left: 10px;
+    margin-top: 0px;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.5s;
+    text-decoration: none;
+    overflow: hidden;
+    background-color: #69a1ac;
+    border: none;
+    }
+        
+    }
+
+
+    @media only screen and (max-width: 400px){
+    button {
+   position: absolute;
+   width: 30%;
+   top: 90%;
+   left: 31%;
     margin-left: 10px;
     margin-top: 0px;
     padding: 10px 10px 10px 10px;

@@ -336,8 +336,8 @@
     #homme  {
     position: absolute;
     width: 27%;
-    top: 30%;
-    left: 28%;
+    top: 25%;
+    left: 26%;
     animation: animationFrames ease 2s;
     animation-iteration-count: 1;
     transform-origin: 50% 50%;
@@ -455,8 +455,8 @@
     #femme {
         position: absolute;
         width: 23%;
-        top: 30%;
-        left: 42%;
+        top: 25%;
+        left: 40%;
         animation: animationFemme ease-in-out 1s;
         animation-iteration-count: 1;
         transform-origin: 50% 50%;
@@ -534,7 +534,7 @@
 
     #decor {
     position: absolute;
-    top:10%;
+    top: 7%;
     left: 20%;
     width: 60%;
     height: auto;
@@ -545,7 +545,7 @@
     #mic {
         position: absolute;
         width: 5%;
-        top: 28%;
+        top: 25%;
         left: 48%;
         animation: animationMic 5s;
         animation-iteration-count: 1;
@@ -628,8 +628,8 @@
     position: absolute;
     width: 10%;
     top: 30%;
-    left: 70%;
-    font-size: 9px;
+    left: 67%;
+    font-size: 7px;
     text-align: right;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;

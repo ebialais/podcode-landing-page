@@ -117,14 +117,17 @@
         margin-right: 0px;
         padding-top: 0px;
         margin-left: 20px;
+       
         }
 
         h1{
           
         width: 100%;
-        font-size: 25px;
+        font-size: 30px;
         color: #96c3ca;
         font-family: 'Concert One', cursive;
+         margin-top: 60px;
+        margin-bottom: 0px;
       
 }
     p {
@@ -135,11 +138,70 @@
     }
 
      #message {
-        width: 100%;
+         
+        width: 60%;
         margin: 0px;
         font-size: 0.9em;
+        margin-top: 50px;
+    }
+
+    #bannière {
+        width: 100%;
+        font-size: 2em;
+        margin: 0;
     }
         
     }
+
+
+    @media only screen and (max-width: 400px){
+    
+    #TextAccueil {
+        position: absolute;
+        width: 80%;
+        top: 48%;
+        left:4%;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-right: 0px;
+        padding-top: 0px;
+        margin-left: 20px;
+       
+        }
+
+        h1{
+          
+        width: 100%;
+        font-size: 25px;
+        color: #96c3ca;
+        font-family: 'Concert One', cursive;
+         margin-top: 5px;
+        margin-bottom: 0px;
+      
+}
+    p {
+        font-family: 'Lato', sans-serif; 
+        margin-right: 200px;
+        font-size: 1em;
+        /*margin: 100px;*/
+    }
+
+     #message {
+         
+        width: 100%;
+        margin: 0px;
+        font-size: 0.9em;
+        margin-top: 15px;
+    }
+        
+    }
+
+    #bannière {
+        width: 100%;
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+
 
 </style>
