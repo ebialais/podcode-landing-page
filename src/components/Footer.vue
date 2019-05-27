@@ -31,6 +31,7 @@
     #footer {
         width: 100vw;
         margin-top: 50px;
+        z-index: 2;
     }
     #infoMoins {
         /* background-color: #f2f2f2; */

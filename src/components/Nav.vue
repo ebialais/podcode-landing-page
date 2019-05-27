@@ -48,10 +48,10 @@
         },
         methods: {
             goAccueil1(){
-                this.$router.push('/Accueil');
+                this.$router.push('/Accueil2');
             },
             goAccueil(){
-                this.$router.push('/Accueil');
+                this.$router.push('/Accueil2');
                 this.bar = !this.bar;
             },
             goEpisodes(){
@@ -71,6 +71,7 @@
 
     #nav {
         width: 100%;
+        z-index: 2;
     }
     #navBar {
         width: 100%;
@@ -114,6 +115,7 @@
         font-family: 'Concert One', cursive;
         text-align: center;
         position: fixed;
+        z-index: 10;
     }
     .menuAnim-enter-active, .menuAnim-leave-active {
         transition: opacity 1.5s;
@@ -133,8 +135,10 @@
         background-color: #506f77;
         cursor: pointer;
         color: white;
-        box-sizing: content-box;
-        width: 100%;
+        /* box-sizing: content-box; */
+        width: 110%;
+        margin-left: -5%;
+        ;
     }
     
     #ulNavBar {

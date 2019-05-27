@@ -46,7 +46,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode: forwards;
-        z-index: -50;
+        /* z-index: 30 !important; */
     }
 
 
@@ -165,7 +165,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
-        z-index: -50;
+        /* z-index: 30 !important; */
     }
 
     @keyframes animationFemme{
@@ -255,7 +255,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
-        z-index: -50;
+        /* z-index: 30 !important; */
     }
 
     @keyframes animationMic{
@@ -330,8 +330,9 @@
 @media only screen and (max-width: 800px){
 
     #illustrationAccueil{
+        /* margin-top: -150px; */
         width: 50vw;
-        z-index:-10;
+        z-index: 3;
     }
     #homme  {
         position: absolute;
@@ -358,7 +359,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode: forwards;
-        z-index: -50;
+        z-index: 999;
     }
 
 

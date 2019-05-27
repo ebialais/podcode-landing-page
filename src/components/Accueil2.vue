@@ -1,11 +1,12 @@
 <template>
     <div id="Accueil2" class="jumbotron-fluid">
-        <p>Accueil 2</p>
-        <h1 id="titreAccueil">{{ titre }}</h1>
-        <p id="message">{{ message }}</p>
-        <br />
-        <p id="bannière">{{ bannière }}</p>
-        <button @click="goEpisodes">Episodes</button>
+        <div id="main">
+            <h1 id="titreAccueil">{{ titre }}</h1>
+            <p id="message">{{ message }}</p>
+            <br />
+            <p id="bannière">{{ bannière }}</p>
+            <button @click.passive="goEpisodes" id="button">Episodes</button>
+        </div>
         <IllustrationAccueil />
     </div>
 </template>
@@ -36,7 +37,7 @@
 </script>
 
 <style scoped>
-    #Accueil {
+    #main {
         position: absolute;
         width: 40%;
         top:15%;
@@ -46,8 +47,8 @@
         margin-right: 100px;
         padding-top: 80px;
         margin-left: 61px;
+        z-index: 0;
     }
-
     #message {
         width: 100%;
         margin: 0px;
@@ -61,45 +62,16 @@
         margin: 0;
     }
 
-    /* .btn {
+    #button {
         width: 150px;
         color: #ffffff;
         background-color: #96c3ca;
         border-color: #96c3ca;
         transition: all .2s ease-in-out; 
-    }
-
-    .btn:hover {
-        color: #ffffff;
-        background-color: #759faa;
-        border-color: #759faa;
-    } */
-
-    button:hover{
-        background: #c1dee2;
-        -webkit-box-shadow: 0px 2px 10px 5px rgb(11, 82, 121);
-        box-shadow: 0px 2px 10px 5px rgb(193, 222, 226);
-        color: #191847;
-    }
-
-    button:after {
-        content: "";
-        background: #89c5cc;
-        display: block;
-        position: absolute;
-        padding-top: 300%;
-        padding-left: 350%;
-        margin-left: -20px !important;
-        margin-top: -120%;
-        opacity: 0;
-        transition: all 0.8s
-    }
-
-    button:active:after {
-        padding: 0;
-        margin: 0;
-        opacity: 1;
-        transition: 0s
+        z-index: 200;
+        margin-top: 46px;
+        padding: 8px;
+        font-size: 1.5em;
     }
 
     h1 {
@@ -119,41 +91,43 @@
 
     
     @media only screen and (max-width: 800px){
-        #Accueil {
+        #Accueil2 {
             position: absolute;
             width: 80%;
-            top: 48%;
+            top: 8%;
             left:4%;
             margin-right: 0px;
             padding-top: 0px;
-            margin-left: 20px;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        #main {
+            width: 100%;
+            margin: 85px 20px 20px;
         }
 
         h1{
             width: 100%;
-            font-size: 30px;
-            margin-top: 60px;
+            margin-bottom:5px;
         }
-    
 
-    #message {
-         
-        width: 60%;
-        margin: 0px;
-        font-size: 0.9em;
-        margin-top: 50px;
-    }
+        #message {
+            width: 90%;
+            /* margin: 0px; */
+            font-size: 0.9em;
+            /* margin-top: 20px; */
+        }
 
-    #bannière {
-        width: 100%;
-        font-size: 2em;
-        margin: 0;
-    }
+        #bannière {
+            width: 100%;
+            font-size: 2em;
+            margin: 0;
+        }
         
     }
 
 
-    @media only screen and (max-width: 400px){
+    /* @media only screen and (max-width: 400px){
 
         h1{
             font-size: 25px;
@@ -171,7 +145,7 @@
         #bannière {
             font-size: 0.8em;
         }
-    }
+    } */
 
 
 

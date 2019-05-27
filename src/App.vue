@@ -23,23 +23,29 @@
       beforeLoad(){
         this.$router.push('/Accueil2');
       },
+      mounted(){
+        this.$nextTick(this.beforeLoad)
+      }
     },
-    mounted(){
-      this.$nextTick(this.beforeLoad)
-    }
   }
 </script>
 
 <style>
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
   }
 </style>

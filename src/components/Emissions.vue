@@ -1,8 +1,10 @@
 <template>
     <div id="emissions">
+      <div id="episodes">
         <p>Derniers épisodes</p>
-        <illu2 id="illuEmissions"/>
         <ChoixEpisodes />
+      </div>
+        <illu2 />
     </div>
 </template>
 
@@ -31,8 +33,10 @@
     text-align: center;
     box-shadow: 0 0 11px rgba(33,33,33,.2); 
     transition: box-shadow .3s;
-    z-index: -50;
+    z-index: 0;
     border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
   }
 
   #emissions:hover {
@@ -44,12 +48,19 @@
     margin-top: 15px;
   }
   @media only screen and (max-width: 800px){
-    #emissions{
-      width: 90%;
-      margin: auto
+    #emissions {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+      margin: -90px -17px;
+      background-color: #fff;
+      box-shadow: none;
+      height: fit-content;
+      overflow-y: auto;
     }
-    #illuEmissions{
-      display: none
+    #episodes{
+      width: 80%;
+      margin: auto;
     }
       
   }

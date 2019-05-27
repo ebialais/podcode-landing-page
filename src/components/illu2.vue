@@ -1,11 +1,11 @@
 <template>
     <div id="illu2">
-        <img id="decor" src="assets/Home@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
-        <img id="homme" src="assets/sitting-2@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
-        <img id="femme" src="assets/standing-6.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
-        <img id="mic" src="assets/new_mic.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="decor2" src="assets/Home@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="homme2" src="assets/sitting-2@2x.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="femme2" src="assets/standing-6.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
+        <img id="mic2" src="assets/new_mic.png" width="100%" class="img-fluid" alt="humaaans by Pablo Stanley">
         <div>
-            <p  id="pablo">@pablostanley</p>
+            <p  id="pablo2">@pablostanley</p>
         </div>    
     </div>
 </template>
@@ -17,7 +17,11 @@
 </script>
 
 <style scoped>
-    #homme {
+    #illu2{
+        width: 50vw;
+        z-index: -10;
+    }
+    #homme2 {
         position: fixed;
         width: 13%;
         top:55%;
@@ -42,7 +46,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
-        z-index: -50;
+        z-index: 30 !important;
         }
 
     @keyframes animationFemme{
@@ -89,7 +93,7 @@
         -ms-transform:  translate(65px,32px)  ;
         }
     }
-    #femme {
+    #femme2 {
         position: fixed;
         width: 12%;
         top: 56%;
@@ -114,7 +118,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode: forwards;
-        z-index: -50;
+        z-index: 30 !important;
     }
 
 
@@ -208,21 +212,16 @@
         }
     }
 
-    #illustration {
-        width: 50%;
-        height: 500px;
-        opacity: 1;
-    }
 
-    #decor {
+    #decor2 {
         position: fixed;
         width: 33%;
         top: 21%;
         left: 59%;
-        z-index: -9999;
+        z-index: -30;
     }
 
-    #mic {
+    #mic2 {
         position: fixed;
         width: 3%;
         top: 57%;
@@ -247,7 +246,7 @@
         -ms-animation-iteration-count: 1;
         -ms-transform-origin: 50% 50%;
         -ms-animation-fill-mode:forwards; /*IE 10+*/
-        z-index: 50;
+        z-index: 30 !important;
     }
 
     @keyframes animationMic{
@@ -305,7 +304,7 @@
         }
     }
 
-    #pablo {
+    #pablo2 {
         position: fixed;
         top: 59%;
         left: 89%;
@@ -316,5 +315,10 @@
         writing-mode: vertical-rl;
         text-orientation: mixed;
         z-index: 50;
+    }
+    @media only screen and (max-width: 800px){
+        #illu2 {
+            display: none;
+        }
     }
 </style>
