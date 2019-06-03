@@ -12,7 +12,6 @@ The project’s is realized in Vue.Js and consists of 2 pages, dynamically loade
 
 ![Laptop Home View](./images/Screenshot_Accueil.png)
 ![Laptop Podcasts View](./images/Screenshot_Episodes.png)
-![iPad View](./images/Screenshot_iPad.png)
 
 ## Built With
 - Vue.js  
